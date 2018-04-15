@@ -29,7 +29,11 @@
 if global.hp &gt;100 global.hp = 100
 if global.hp &lt;0 global.hp = 0
 
-
+//Death
+if global.hp &lt;= 0
+{
+    scr_death();
+}
 
 
 
@@ -89,9 +93,15 @@ draw_text(10,10," Fps = " + string(fps))
 draw_sprite_ext(spr_healthbar,1,10,40,1,1,0,c_white,1)
 draw_sprite_ext(spr_healthbar_inner,1,10,40,global.hp/2,1,0,c_white,1)
 
-//Draw Extra Lives
-draw_sprite(spr_xtralives,1,10,60)
-draw_text(40,63," = " + string(global.xtralives))
+draw_text(10,70," global.checkpoint = " + string(global.checkpoint))
+
+draw_text(10,80," global.checkpointx = " + string(global.checkpointx))
+
+draw_text(10,90," global.checkpointy = " + string(global.checkpointy))
+
+draw_text(10,100,"  global.checkpointR = " + string( global.checkpointR))
+
+
 </string>
           </argument>
         </arguments>

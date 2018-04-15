@@ -13,9 +13,13 @@
     <sprite>sprites\spr_healthbar</sprite>
     <sprite>sprites\spr_healthbar_inner</sprite>
     <sprite>sprites\spr_deathzone</sprite>
+    <sprite>sprites\spr_checkpoint</sprite>
   </sprites>
   <backgrounds name="background"/>
   <paths name="paths"/>
+  <scripts name="scripts">
+    <script>scripts\scr_death.gml</script>
+  </scripts>
   <fonts name="fonts">
     <font>fonts\font_arial_black</font>
   </fonts>
@@ -25,6 +29,8 @@
     <object>objects\obj_collision</object>
     <object>objects\obj_collision_small</object>
     <object>objects\obj_deathzone</object>
+    <object>objects\obj_checkpoint</object>
+    <object>objects\obj_start_checkpoint</object>
   </objects>
   <rooms name="rooms">
     <room>rooms\Instance_Room</room>
