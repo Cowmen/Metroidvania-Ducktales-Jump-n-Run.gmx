@@ -127,6 +127,15 @@ if (place_meeting(x,y+vsp,obj_collision))
 y += vsp;
 
 
+//Animation
+if (move!=0) image_xscale = move;
+if key_right image_index = spr_player_move;
+
+
+if (place_meeting(x,y+1,obj_collision))
+{
+    if (move!=0) sprite_index = spr_player_move; else sprite_index = spr_player
+}
 
 //Test
 if global.hp &gt;0{

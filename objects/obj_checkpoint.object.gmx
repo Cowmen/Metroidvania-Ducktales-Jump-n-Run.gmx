@@ -59,7 +59,11 @@ image_speed =0
 
 if (global.checkpointR == room)
 {
-    if (global.checkpoint == id) image_index = 1; else image_index = 0;
+    if (global.checkpoint == id)   image_index = 1 ; else image_index = 0;
+}
+if (global.checkpointR == room)
+{
+    if (global.checkpoint == id) image_angle += 1  ; else image_angle = 0;
 }
 
 
